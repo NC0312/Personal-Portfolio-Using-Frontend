@@ -38,7 +38,19 @@
             color: #222;
         }
 
-        .intro2::before {
+         .intro2::before {
+            content: attr(data-text);
+            position: absolute;
+            color: #fff;
+            width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            /* border-right: 4px solid #fff;  */
+            animation: animate 8s linear infinite;
+            filter: drop-shadow(0 0 51px lightgrey) drop-shadow(0 0 5px lightgrey);
+        }
+
+        .intro::before {
             content: attr(data-text);
             position: absolute;
             color: #fff;
@@ -46,20 +58,8 @@
             overflow: hidden;
             white-space: nowrap;
             /* border-right: 4px solid #fff; */
-            animation: animate 8s linear infinite;
-            filter: drop-shadow(0 0 51px lightgrey) drop-shadow(0 0 5px lightgrey);
-        }
-
-        .intro::before {
-/*             content: attr(data-text); */
-            position: absolute;
-            color: #fff;
-            width: 200px;
-            overflow: hidden;
-            white-space: nowrap;
-/*             border-right: 4px solid #fff; */
-/*             animation: animate 8s linear infinite; */
-            filter: drop-shadow(0 0 20px crimson) drop-shadow(0 0 50px #fff);
+            animation: animate 8s radial infinite;
+            filter: drop-shadow(0 0 51px crimson) drop-shadow(0 0 5px #fff);
         }
 
         @keyframes animate {
@@ -92,7 +92,7 @@
             position: fixed;
             height: 45px;
             width: 42px;
-            color: crimson;
+            color: green;
         }
 
         /*Navbar-Styling*/
@@ -115,7 +115,7 @@
 
         .navbar.sticky {
             padding: 15px 0;
-            background: crimson;
+            background: green;
         }
 
         .navbar .max-width {
@@ -138,7 +138,7 @@
         }
 
         .navbar .logo a span {
-            color: crimson;
+            color: green;
             font-size: 30px;
             transition: color 0.3s ease;
         }
@@ -172,7 +172,7 @@
             font-size: 20px;
             font-family: 'Ubuntu';
             font-weight: 600;
-            filter: drop-shadow(0 0 5px crimson) drop-shadow(0 0 5px lightgrey);
+            filter: drop-shadow(0 0 5px green) drop-shadow(0 0 5px lightgrey);
         }
 
         .navbar.sticky .menu li a:hover {
@@ -221,25 +221,25 @@
         }
 
         .home .home-content .text-3 span {
-            color: crimson;
+            color: green;
             font-weight: 500;
         }
 
         .home .home-content a {
             display: inline-block;
-            background: crimson;
+            background: green;
             color: #fff;
             font-family: 'Ubuntu';
             font-size: 25px;
             padding: 12px 36px;
             margin-top: 20px;
             border-radius: 15px;
-            border: 2px solid crimson;
+            border: 2px solid green;
             transition: all 0.3s ease;
         }
 
         .home .home-content a:hover {
-            color: crimson;
+            color: green;
             background: none;
         }
 
@@ -280,7 +280,7 @@
             bottom: -12px;
             left: 50%;
             font-size: 20px;
-            color: crimson;
+            color: green;
             padding: 5px;
             background: #fff;
             transform: translateX(-50%);
@@ -317,7 +317,7 @@
         }
 
         .about .about-content .right .text span {
-            color: crimson;
+            color: green;
         }
 
         .about .about-content .right p {
@@ -326,7 +326,7 @@
 
         .about .about-content .right a {
             display: inline-block;
-            background: crimson;
+            background: green;
             color: #fff;
             font-family: 'Ubuntu';
             font-size: 20px;
@@ -334,12 +334,12 @@
             padding: 10px 30px;
             margin-top: 20px;
             border-radius: 15px;
-            border: 2px solid crimson;
+            border: 2px solid green;
             transition: all 0.3s ease;
         }
 
         .about .about-content .right a:hover {
-            color: crimson;
+            color:green;
             background: none;
         }
 
@@ -379,7 +379,7 @@
             bottom: -12px;
             left: 50%;
             font-size: 20px;
-            color: crimson;
+            color: green;
             padding: 5px;
             background: #fff;
             transform: translateX(-50%);
@@ -411,7 +411,7 @@
         }
 
         .services .serv-content .card:hover {
-            background: crimson;
+            background: green;
         }
 
         .services .serv-content .card .box {
@@ -424,11 +424,11 @@
 
         .services .serv-content .card i {
             font-size: 50px;
-            color: crimson;
+            color: green;
             transition: color 0.3s ease;
         }
 
-        .services .serv-content .card:hover i {
+        .services .serv-content .card:hover i{
             color: #fff;
         }
 
@@ -467,7 +467,7 @@
             bottom: -12px;
             left: 50%;
             font-size: 20px;
-            color: crimson;
+            color: green;
             padding: 5px;
             background: #fff;
             transform: translateX(-50%);
@@ -500,7 +500,7 @@
 
         .skills .skills-content .left a {
             display: inline-block;
-            background: crimson;
+            background: green;
             color: #fff;
             font-family: 'Ubuntu';
             font-size: 18px;
@@ -508,12 +508,12 @@
             padding: 8px 16px;
             margin-top: 20px;
             border-radius: 15px;
-            border: 2px solid crimson;
+            border: 2px solid green;
             transition: all 0.3s ease;
         }
 
         .skills .skills-content .left a:hover {
-            color: crimson;
+            color: green;
             background: none;
         }
 
@@ -546,7 +546,7 @@
             height: 100%;
             left: 0;
             top: 0;
-            background: crimson;
+            background: green;
         }
 
         .skills-content .right .html::before {
@@ -604,7 +604,7 @@
             bottom: -12px;
             left: 50%;
             font-size: 20px;
-            color: crimson;
+            color: green;
             padding: 5px;
             background: #111;
             transform: translateX(-50%);
@@ -619,7 +619,7 @@
         }
 
         .teams .carousel .card:hover {
-            background: crimson;
+            background: green;
         }
 
         .teams .carousel .card:hover img {
@@ -648,7 +648,7 @@
             width: 150px;
             object-fit: cover;
             border-radius: 50%;
-            border: 5px solid crimson;
+            border: 5px solid green;
             transition: all 0.3s ease;
         }
 
@@ -704,7 +704,7 @@
             bottom: -12px;
             left: 50%;
             font-size: 20px;
-            color: crimson;
+            color: green;
             padding: 5px;
             background: #fff;
             transform: translateX(-50%);
@@ -751,7 +751,7 @@
 
         .contact .contact-content .row i {
             font-size: 25px;
-            color: crimson;
+            color: green;
         }
 
         .contact .contact-content .info .head {
@@ -790,7 +790,7 @@
         .contact .right form .textarea textarea {
             height: 100%;
             width: 100%;
-            border: 1px solid crimson;
+            border: 1px solid green;
             border-radius: 6px;
             outline: none;
             padding: 0 15px;
@@ -811,8 +811,8 @@
         .contact .right form .button button {
             height: 100%;
             width: 100%;
-            border: 2px solid crimson;
-            background: crimson;
+            border: 2px solid green;
+            background: green;
             color: #fff;
             font-size: 20px;
             font-weight: 500;
@@ -823,7 +823,7 @@
         }
 
         .contact .right form .button button:hover {
-            color: crimson;
+            color: green;
             background: none;
         }
 
@@ -837,7 +837,7 @@
         }
 
         footer span a {
-            color: crimson;
+            color: green;
         }
 
         footer span a:hover {
@@ -976,14 +976,14 @@
                 font-size: 27px;
             }
         }
-        
         .para span{
             font-size: 18px;
             font-weight: 500;
-            color: crimson;
+            color: green;
             text-transform: capitalize;
         }
     </style>
+
 </head>
 
 <body>
