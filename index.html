@@ -15,6 +15,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+    <!-- Email Js... -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ISsfvTuM7Kpsgf1y_");
+        })();
+    </script>
+    
     <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
@@ -1211,20 +1221,20 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name..." required>
+                                <input type="text" id="name" placeholder="Name..." required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email..." required>
+                                <input type="email" id="email" placeholder="Email..." required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject..." required>
+                            <input type="text" id="subject" placeholder="Subject..." required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Describe..." project=""></textarea>
+                            <textarea cols="30" rows="10" id="message" placeholder="Describe..." project=""></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Send Message</button>
+                            <button type="submit" onclick="sendMail()">Send Message</button>
                         </div>
 
                     </form>
@@ -1277,6 +1287,29 @@
         }
     })
 });
+        function sendMail(){
+            var params={
+                name:document.getElementById("name").value,
+                email:document.getElementById("email").value,
+                subject:document.getElementById("subject").value,
+                message:document.getElementById("message").value,
+            };
+
+            const serviceID="service_o03cwob";
+            const templateID="template_eyfo3a8";
+
+            emailjs
+            .send(serviceID,templateID,params)
+            .then((res)=>{
+                document.getElementById("name").value="";
+                document.getElementById("email").value="";
+                document.getElementById("subject").value="";
+                document.getElementById("message").value="";
+                console.log(res);
+                alert("Your email sent successfully!!");
+            })
+            .catch((err)=>console.log(err));
+        }
     </script>
 </body>
 
