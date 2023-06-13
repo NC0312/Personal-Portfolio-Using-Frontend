@@ -386,7 +386,7 @@
     
     
             .services .title::after {
-                content: "what i provide";
+                content: "what i did";
                 position: absolute;
                 bottom: -12px;
                 left: 50%;
@@ -412,18 +412,30 @@
                 justify-content: space-between;
             }
     
+            /* .card{
+                display: flex;
+            } */
             .services .serv-content .card {
                 width: calc(33% - 20px);
                 background: #222;
                 text-align: center;
                 border-radius: 6px;
+                margin: 7px 7px 7px 7px;
                 padding: 20px 25px;
                 cursor: pointer;
                 transition: all 0.3s ease;
             }
     
-            .services .serv-content .card:hover {
-                background: #C70039;
+            .services .serv-content .weather-app:hover {
+                background: #266ead;
+            }
+
+            .services .serv-content .ai-answers:hover {
+                background: #19c37d;
+            }
+
+            .services .serv-content .movies-app:hover {
+                background: #de9210 ;
             }
     
             .services .serv-content .card .box {
@@ -564,11 +576,11 @@
             .skills-content .right .html::before {
                 width: 90%;
             }
-
+    
             .skills-content .right .node::before{
                 width: 70%;
             }
-        
+
             .skills-content .right .css::before {
                 width: 80%;
             }
@@ -998,6 +1010,19 @@
                 color: #C70039;
                 text-transform: capitalize;
             }
+
+            .project-logo{
+                height: 250px;
+                width: 220px;
+            }
+
+            .project-logo-ai
+            {
+                padding-top: 15px;
+                height: 250px;
+                width: 220px;
+                border-radius: 50%;
+            }
         </style>
 
 </head>
@@ -1013,7 +1038,7 @@
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#teams">Teams</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -1060,39 +1085,40 @@
         </div>
     </section>
 
-    <!--Services Section-->
+    <!--Projects Section-->
         <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title">My Projects</h2>
             <div class="serv-content">
-                <div class="card">
+                <div class="card ai-answers">
+                    <div class="box">
+<!--                         <i class="fa-brands fa-react"></i> -->
+                        <a href="https://nc0312.github.io/ai-answers.github.io/" target="_blank">
+                        <img class="project-logo-ai" src="images/AI.png"></a>
+                        <div class="text">AI Answers</div>
+<!--                         <p>Using this framework i can create highly responsive single page websites,one of my best skills to discuss,i really like the way react works and it's really easy to code in React.</p> -->
+                    </div>
+                </div>
+
+                <div class="card weather-app">
                     <div class="box">
 <!--                         <i class="fa-brands fa-js"></i> -->
                         <a href="https://nc0312.github.io/Weather.github.io/" target="_blank">
-                        <img src="images\js.svg"></a>
-                        <div class="text">Web Developer</div>
+                        <img class="project-logo" src="images/clear.png"></a>
+                        <div class="text">Weather App</div>
 
 <!--                         <p>Have a good hold at many frameworks like <span>HTML5,CSS3,JS,Bootstrap</span>,also created many projects using these frameworks only.</p> -->
 
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-<!--                         <i class="fa-brands fa-react"></i> -->
-                        <a href="https://github.com/NC0312/ToDo-List-Using-React-JS" target="_blank">
-                        <img src="images\react.svg"></a>
-                        <div class="text">ReactJs</div>
-<!--                         <p>Using this framework i can create highly responsive single page websites,one of my best skills to discuss,i really like the way react works and it's really easy to code in React.</p> -->
-                    </div>
-                </div>
-
-                <div class="card">
+                
+                
+                <div class="card movies-app">
                     <div class="box">
 <!--                         <i class="fa-brands fa-java"></i> -->
-                        <a href="https://github.com/NC0312/Supermarket-Billing-System-Using-Cpp" target="_blank">
-                            <img src="images\java.svg"></a>
-                        <div class="text">C++/Java</div>
+                        <a href="https://nc0312.github.io/MovieDetails.github.io/" target="_blank">
+                            <img class="project-logo" src="images/movies.png"></a>
+                        <div class="text">Movie Details</div>
 
 <!--                         <p>Feels really nice working with these two programming languages,as these are the core of software development,really comfortable working with C++ and java.</p> -->
 
