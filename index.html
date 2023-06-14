@@ -336,23 +336,33 @@
                 text-align: justify;
             }
     
-            .about .about-content .right a {
+            .about .about-content .right a{
                 display: inline-block;
-                background: #C70039;
                 color: #fff;
                 font-family: 'Ubuntu';
                 font-size: 20px;
                 font-weight: 500;
+                
                 padding: 10px 30px;
                 margin-top: 20px;
-                border-radius: 15px;
-                border: 2px solid #C70039;
+                border-radius: 50%;
                 transition: all 0.3s ease;
+            }
+
+            .about .about-content .right .linkedin{
+                background: rgb(20, 82, 237);
+                border: 2px solid white;
+                
+            }
+
+            .about .about-content .right .github{
+                background: #000;
+                border: 2px solid white;
             }
     
             .about .about-content .right a:hover {
-                color:#C70039;
-                background: none;
+                color:#fff;
+                background: #C70039;
             }
     
             /* services section styling */
@@ -1083,7 +1093,8 @@
                     <p>Apart from that,technologies that i am good at are <span>C++,Java and ReactJs</span>.</p>
                 </div>
 
-                    <a href="https://www.linkedin.com/in/niket-chawla-5a840b202/" target="_blank">LinkedIn</a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/niket-chawla-5a840b202/" target="_blank"><i class="fa-brands fa-linkedin "></i></a>
+                    <a class="github" href="https://github.com/NC0312" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -1155,7 +1166,7 @@
                     <div class="text">My Creative Skills & Experiences..</div>
                     <p>As you can see these are my skills and percentage of experience i have using these skills.
                     </p>
-                    <a href="https://github.com/NC0312" target="_blank">GitHuB</a>
+                    <!-- <a href="https://github.com/NC0312" target="_blank">GitHuB</a> -->
                 </div>
                 <div class="column right">
                     <div class="bars">
