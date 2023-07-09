@@ -435,7 +435,21 @@
                 cursor: pointer;
                 transition: all 0.3s ease;
             }
+
+            .services .serv-content .imdb-app .box .project-logo{
+                /* margin-top: 10px; */
+                border-radius: 50%;
+            }
     
+            .services .serv-content .imdb-app:hover{
+                background: #000;
+            }
+
+            .services .serv-content .imdb-app:hover .box .text{
+                transition: all 0.3s ease-in;
+                color: yellow;
+            }
+
             .services .serv-content .weather-app:hover {
                 background: #266ead;
             }
@@ -1114,6 +1128,18 @@
             <h2 class="title">My Projects</h2>
             <div class="serv-content">
                 
+                <div class="card imdb-app">
+                    <div class="box">
+<!--                         <i class="fa-brands fa-js"></i> -->
+                        <a href="https://niketimdb.netlify.app/" target="_blank">
+                        <img class="project-logo" src="images/imdb.png"></a>
+                        <div class="text">IMDb</div>
+
+<!--                         <p>Have a good hold at many frameworks like <span>HTML5,CSS3,JS,Bootstrap</span>,also created many projects using these frameworks only.</p> -->
+
+                    </div>
+                </div>
+
                 <div class="card weather-app">
                     <div class="box">
 <!--                         <i class="fa-brands fa-js"></i> -->
