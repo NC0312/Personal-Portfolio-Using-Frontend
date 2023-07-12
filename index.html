@@ -642,7 +642,7 @@
             .teams {
                 font-family: 'Poppins';
                 color: #fff;
-                background: #111;
+                background: #111
             }
     
             .teams .title {
@@ -667,7 +667,7 @@
             }
     
             .teams .title::after {
-                content: "who with me";
+                content: "what we provide";
                 position: absolute;
                 bottom: -12px;
                 left: 50%;
@@ -686,8 +686,22 @@
                 transition: all 0.3s ease;
             }
     
-            .teams .carousel .card:hover {
-                background: #C70039;
+            .teams .carousel .cpp:hover {
+                background: linear-gradient(to top , #3d98d1 , #d1d1d6);
+            }
+
+            .teams .carousel .java:hover {
+                background: linear-gradient(to left , #e43307 , #2828b8);
+            }
+
+            .teams .carousel .react:hover {
+                background:linear-gradient(to bottom , #3d98d1 , #191929);
+                /* transition: all 0.3s ease-in; */
+            }
+
+            .teams .carousel .js:hover {
+                background:linear-gradient(to bottom , yellow , #222);
+                /* transition: all 0.3s ease-in; */
             }
     
             .teams .carousel .card:hover img {
@@ -716,7 +730,7 @@
                 width: 150px;
                 object-fit: cover;
                 border-radius: 50%;
-                border: 2px solid #C70039;
+                border: 2px solid #fff;
                 transition: all 0.3s ease;
             }
     
@@ -1080,7 +1094,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#teams">Teams</a></li>
+                <li><a href="#teams">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -1262,36 +1276,35 @@
     <!-- teams section -->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">My team</h2>
+            <h2 class="title">My Services</h2>
             <div class="carousel owl-carousel">
-                <div class="card">
+                <div class="card cpp">
                     <div class="box">
-                        <img src="images\Nom.jpeg" alt="">
-                        <div class="text">Om Saini</div>
-                        <p>C++ Developer</p>
+                        <img src="images/C++.png">
+                        <div class="text">C++ Programming</div>
+                        
                     </div>
                 </div>
-                <div class="card">
+                <div class="card java">
                     <div class="box">
-                        <img src="images\Mehraan.jpeg" alt="">
-                        <div class="text">Mehran Firdous</div>
-                        <p>Java Developer</p>
+                        <img src="images\java.png">
+                        <div class="text">Java Programming</div>
+                        
                     </div>
                 </div>
-                <div class="card">
+                <div class="card react">
                     <div class="box">
-                        <img src="images\Parii.jpeg" alt="">
-                        <div class="text">Parikshit Pareek</div>
-                        <p>Marketing Specialist</p>
+                        <img src="images/React.png">
+                        <div class="text">ReactJS</div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card js">
                     <div class="box">
-                        <img src="images\profile-pic.jpeg" alt="">
-                        <div class="text">Niket Chawla(Me)</div>
-                        <p>ReactJs Web Developer</p>
+                        <img src="images\js.png" alt="">
+                        <div class="text">JavaScript</div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
