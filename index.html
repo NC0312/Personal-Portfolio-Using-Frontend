@@ -369,7 +369,7 @@
 
         /* services section styling */
 
-        .services {
+        /* .services {
             color: #fff;
             background: #111;
         }
@@ -424,9 +424,6 @@
             justify-content: space-between;
         }
 
-        /* .card{
-                display: flex;
-            } */
         .services .serv-content .card {
             width: calc(33% - 20px);
             
@@ -440,22 +437,22 @@
         }
 
         .services .serv-content .imdb-app .box .project-logo {
-            /* margin-top: 10px; */
+          
             border-radius: 50%;
         }
 
         .services .serv-content .netflix .box .project-logo {
-            /* margin-top: 10px; */
+         
             border-radius: 50%;
         }
 
         .services .serv-content .todo-app .box .project-logo {
-            /* margin-top: 10px; */
+         
             border-radius: 50%;
         }
 
         .services .serv-content .movies-app .box .project-logo {
-            /* margin-top: 10px; */
+            
             border-radius: 50%;
         }
 
@@ -467,16 +464,12 @@
         .services .serv-content .netflix:hover {
             background: linear-gradient(to bottom, #b10808, #222);
             transition: all 0.5s ease-in;
-            /* color: #b10808; */
+           
         }
-/* 
-        .services .serv-content .imdb-app:hover .box .text {
-            transition: all 0.3s ease-in;
-            color: yellow;
-        } */
+
 
         .services .serv-content .weather-app:hover {
-            /* background: #266ead; */
+           
             background: linear-gradient(to bottom, #266ead, #222);
             transition: all 0.5s ease-in;
         }
@@ -490,18 +483,18 @@
         }
 
         .services .serv-content .todo-app:hover {
-            /* background: #06283D; */
+       
             background: linear-gradient(to bottom, #06283D,#222);
             transition: all 0.5s ease-in;
         }
 
         .services .serv-content .movies-app:hover {
-            background: linear-gradient(to bottom, #de9210,#222);
+            background: linear-gradient(to bottom, beige,#222);
             transition: all 0.5s ease-in;
         }
 
         .services .serv-content .text-to-speech-app:hover {
-            /* background: #382dad; */
+            
             background: linear-gradient(to bottom, #382dad,#222);
             transition: all 0.5s ease-in;
         }
@@ -528,6 +521,123 @@
             font-size: 30px;
             font-weight: 500;
             margin: 10px 0 7px 0;
+        } */
+
+
+        /*Project Section Styling*/
+        .services {
+            font-family: 'Poppins';
+            color: #fff;
+            background: #111
+        }
+
+        .services .title {
+            position: relative;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            font-family: 'Poppins';
+        }
+
+        .services .title::before {
+            content: "";
+            position: absolute;
+            bottom: 7px;
+            left: 50%;
+            width: 210px;
+            height: 4px;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+
+        .services .title::after {
+            content: "what i did";
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            font-size: 20px;
+            color: #C70039;
+            padding: 5px;
+            background: #111;
+            transform: translateX(-50%);
+        }
+
+        .services .carousel .card {
+            background: #222;
+            border-radius: 6px;
+            padding: 25px 35px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .services .carousel .netflix:hover {
+            background: linear-gradient(to bottom, #b10808, #222);
+            transition: all 0.5s ease-in;
+        }
+
+        .services .carousel .imdb-app:hover {
+            background: linear-gradient(to bottom, #de9210, #222);
+            transition: all 0.5s ease-in;
+        }
+
+        .services .carousel .weather-app:hover {
+            background: linear-gradient(to bottom, #266ead, #222);
+            transition: all 0.5s ease-in;
+        }
+
+        .services .carousel .weather-app .box img{
+            border: none;
+        }
+        .services .carousel .card .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services .carousel .card:hover .box {
+            transform: scale(1.05);
+        }
+
+        .services .carousel .card .text {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0 7px 0;
+        }
+
+        .services .carousel .card img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            transition: all 0.3s ease;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            height: 13px;
+            width: 13px;
+            margin: 0 5px;
+            outline: none !important;
+            border-radius: 50%;
+            border: 2px solid white !important;
+        }
+
+        .owl-dot.active {
+            width: 40px;
+            border-radius: 14px;
+        }
+
+        .owl-dot.active,
+        .owl-dot:hover {
+            background: white !important;
         }
 
         /* skills section styling */
@@ -715,16 +825,17 @@
         }
 
         .teams .carousel .cpp:hover {
-            background: linear-gradient(to top, #3d98d1, #d1d1d6,#3d98d1);
+            background: linear-gradient(to top, #3d98d1, #d1d1d6, #3d98d1);
             transition: all 0.3s ease-in;
         }
 
         .teams .carousel .java:hover {
-            background: linear-gradient(to bottom, #fff,#222);
+            background: linear-gradient(to bottom, #fff, #222);
             transition: all 0.3s ease-in;
         }
-         .teams .carousel .html:hover {
-            background: linear-gradient(to bottom, #e44d26,#222);
+
+        .teams .carousel .html:hover {
+            background: linear-gradient(to bottom, #e44d26, #222);
             transition: all 0.3s ease-in;
         }
 
@@ -739,12 +850,12 @@
         }
 
         .teams .carousel .node:hover {
-            background: linear-gradient(to top, #22bc20, #b5b5c4,#22bc20);
+            background: linear-gradient(to top, #22bc20, #b5b5c4, #22bc20);
             transition: all 0.3s ease-in;
         }
 
         .teams .carousel .express:hover {
-            background: linear-gradient(to bottom,  #2E2E2E , #f0f0f0,#2E2E2E);
+            background: linear-gradient(to bottom, #2E2E2E, #f0f0f0, #2E2E2E);
             transition: all 0.3s ease-in;
         }
 
@@ -1202,83 +1313,94 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="serv-content">
 
                 <div class="card netflix">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-js"></i> -->
                         <a href="https://niketflix.netlify.app/" target="_blank">
                             <img class="project-logo" src="images/netflix.png"></a>
                         <div class="text">Netflix Clone</div>
-
-                        <!--                         <p>Have a good hold at many frameworks like <span>HTML5,CSS3,JS,Bootstrap</span>,also created many projects using these frameworks only.</p> -->
-
                     </div>
                 </div>
 
                 <div class="card imdb-app">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-js"></i> -->
                         <a href="https://niketimdb.netlify.app/" target="_blank">
                             <img class="project-logo" src="images/imdb.png"></a>
                         <div class="text">IMDb</div>
-
-                        <!--                         <p>Have a good hold at many frameworks like <span>HTML5,CSS3,JS,Bootstrap</span>,also created many projects using these frameworks only.</p> -->
-
                     </div>
                 </div>
 
                 <div class="card weather-app">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-js"></i> -->
                         <a href="https://nc0312.github.io/Weather.github.io/" target="_blank">
                             <img class="project-logo" src="images/clear.png"></a>
                         <div class="text">Weather App</div>
-
-                        <!--                         <p>Have a good hold at many frameworks like <span>HTML5,CSS3,JS,Bootstrap</span>,also created many projects using these frameworks only.</p> -->
-
                     </div>
                 </div>
 
                 <div class="card movies-app">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-java"></i> -->
                         <a href="https://nc0312.github.io/MovieDetails.github.io/" target="_blank">
                             <img class="project-logo" src="images/movies.jpg"></a>
                         <div class="text">Movie Details</div>
-
-                        <!--                         <p>Feels really nice working with these two programming languages,as these are the core of software development,really comfortable working with C++ and java.</p> -->
-
                     </div>
                 </div>
-
-
-
                 <div class="card todo-app">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-java"></i> -->
                         <a href="https://nikettodo.netlify.app/" target="_blank">
                             <img class="project-logo" src="images/todo.png"></a>
                         <div class="text">ToDo App</div>
-
-                        <!--                         <p>Feels really nice working with these two programming languages,as these are the core of software development,really comfortable working with C++ and java.</p> -->
-
                     </div>
                 </div>
 
                 <div class="card text-to-speech-app">
                     <div class="box">
-                        <!--                         <i class="fa-brands fa-java"></i> -->
                         <a href="https://nc0312.github.io/Text-To-Speech.github.io/" target="_blank">
                             <img class="project-logo-ai" src="images/text to speech.jpg"></a>
                         <div class="text">Text to Speech</div>
-
-                        <!--                         <p>Feels really nice working with these two programming languages,as these are the core of software development,really comfortable working with C++ and java.</p> -->
-
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card netflix">
+                    <a href="https://niketflix.netlify.app/" target="_blank">
+                        <div class="box">
+                            <img src="images\netflix.png" alt="">
+                            <div class="text" style="text-decoration: none; color: white;">Netflix</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="card imdb-app">
+                    <a href="https://niketimdb.netlify.app/" target="_blank">
+                        <div class="box">
+                            <img src="images\imdb.png" alt="">
+                            <div class="text" style="text-decoration: none; color: white;">IMDb</div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="card weather-app">
+                    <a href="https://nc0312.github.io/Weather.github.io/" target="_blank">
+                        <div class="box">
+                            <img src="images\clear.png" alt="">
+                            <div class="text" style="text-decoration: none; color: white;">Weather App</div>
+                        </div>
+                    </a>
+
                 </div>
 
             </div>
@@ -1417,7 +1539,7 @@
                         <div class="text">HTML5</div>
                     </div>
                 </div>
-                
+
 
 
 
