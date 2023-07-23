@@ -111,7 +111,25 @@
             position: fixed;
             height: 45px;
             width: 42px;
-            color: #C70039;
+            background: #C70039;
+            right: 30px ;
+            bottom: 10px ;
+            text-align: center;
+            line-height: 45px;
+            color: #fff;
+            z-index: 9999;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-up-btn.show{
+            bottom: 30px;
+            opacity: 1;
+            pointer-events: auto;
         }
 
         /*Navbar-Styling*/
@@ -1552,9 +1570,9 @@
 </head>
 
 <body>
-    <!-- <div class="scroll-up-btn">
+    <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
-    </div> -->
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <!-- <div class="logo"><a href="#">NC<span>0312</span></a></div> -->
@@ -2075,8 +2093,21 @@
                 } else {
                     $('.navbar').removeClass("sticky");
                 }
+                if(this.scrollY>500)
+                {
+                    $('.scroll-up-btn').addClass("show");
+                }
+                else
+                {
+                    $('.scroll-up-btn').removeClass("show");
+                }
             });
 
+
+            // slide up script
+            $('.scroll-up-btn').click(function(){
+                $('html').animate({scrollTop:0});
+            })
             //Toggle Menu
             $('.menu-btn').click(function () {
                 $('.navbar .menu').toggleClass("active");
