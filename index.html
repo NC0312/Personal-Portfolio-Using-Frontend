@@ -23,8 +23,11 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
     <!-- Email Js... -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+
     </script>
     <script type="text/javascript">
         (function () {
@@ -244,6 +247,8 @@
 
         .home .home-content .text-1 {
             font-size: 27px;
+            animation: zoomInDown;
+            animation-duration: 1s;
         }
 
         .home .home-content .text-2 {
@@ -255,12 +260,12 @@
         .home .home-content .text-3 {
             font-size: 40px;
             margin: 5px 0;
-            animation: zoomInDown;
-            animation-duration: 1.8s;
+            
         }
 
         .home .home-content .text-3 span {
             color: #C70039;
+            font-size: 40px;
             font-weight: 500;
         }
 
@@ -1598,7 +1603,7 @@
                 <div class="text-1">Hello,my name is</div>
                 <!-- <div class="text-2">Niket Chawla</div> -->
                 <h2 class="intro" data-text="">Niket</h2>
-                <div class="text-3">And I'm a <span>Developer</span></div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="resume.pdf" download>Download Resume</a>
             </div>
         </div>
@@ -1613,7 +1618,7 @@
                     <img src="images/profile-pic.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Niket and I'm a <span>MERN Stack Developer</span></div>
+                    <div class="text">I'm Niket and I'm a <span class="typing-2"></span></div>
 
                     <div class="para">
                         <p>I am currently pursuing my undergraduate degree in Computer science at Chitkara University.I
@@ -2135,6 +2140,20 @@
                     }
                 }
             })
+        });
+
+        // typing animation script
+        var typed = new Typed(".typing",{
+            strings:["Developer","Cricketer","Gamer","Singer"],
+            typeSpeed:100,
+            backSpeed:60,
+            loop:true
+        });
+        var typed = new Typed(".typing-2",{
+            strings:["MERN Stack Developer"],
+            typeSpeed:100,
+            backSpeed:60,
+            loop:true
         });
         function sendMail() {
             var params = {
