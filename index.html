@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is Niket Chawla</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="F:\CHITKARA SEM-4\Personal Portfolio\style.css">
     <link rel="icon" href="images\back.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +47,7 @@
             position: relative;
             font-size: 6em;
             color: #fff;
-            animation:zoomInDown;
+            animation: zoomInDown;
             animation-duration: 1s;
         }
 
@@ -240,8 +238,8 @@
             font-size: 40px;
             margin: 5px 0;
             animation: zoomInDown;
-            animation-duration: 1.8s;       
-         }
+            animation-duration: 1.8s;
+        }
 
         .home .home-content .text-3 span {
             color: #C70039;
@@ -256,7 +254,7 @@
             font-size: 25px;
             padding: 12px 36px;
             margin-top: 20px;
-/*             border-radius: 15px; */
+            /*             border-radius: 15px; */
             border: 2px solid #C70039;
             transition: all 0.3s ease;
         }
@@ -363,8 +361,8 @@
         }
 
         .about .about-content .right .linkedin {
-/*             background: rgb(20, 82, 237); */
-            background:#0A66C2;
+            /*             background: rgb(20, 82, 237); */
+            background: #0A66C2;
             border: 2px solid white;
 
         }
@@ -375,14 +373,14 @@
         }
 
         .about .about-content .right .instagram {
-            background: linear-gradient(to top right , #f7ad02 , #de0f2e,#C22867,#8F4DC4);
+            background: linear-gradient(to top right, #f7ad02, #de0f2e, #C22867, #8F4DC4);
             border: 2px solid white;
         }
 
         .about .about-content .right a:hover {
             color: crimson;
             background: none;
-/*             font-size: 22px; */
+            /*             font-size: 22px; */
             border: 2px solid #C70039;
             transition: all 0.3s ease;
         }
@@ -613,8 +611,64 @@
         }
 
         .services .carousel .login-app:hover {
-            background: linear-gradient(to bottom, silver,lightblue, #222);
+            background: linear-gradient(to bottom, silver, lightblue, #222);
             transition: all 0.5s ease-in;
+        }
+
+        .info-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #C70039;
+            font-size: 20px;
+            font-family: 'Ubuntu';
+            font-weight: 500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #C70039;
+            cursor: pointer;
+        }
+
+        
+
+        #tool-text{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background-color: #000;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            /* white-space: nowrap; */
+            padding: 10px 15px;
+            /* border-radius: 7px; */
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #tool-text::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -100%;
+            transform: translateZ(-50%);
+            border: 15px solid;
+            border-color: #000 #0000 #0000 #0000;
+        }
+
+        .info-button:hover #tool-text{
+            
+            background: #921035;
+            transition: all 0.3s ease;
+            top: -50%;
+            visibility:visible;
+            opacity: 1;
         }
 
         .services .carousel .todo-app:hover {
@@ -632,9 +686,10 @@
             transition: all 0.5s ease-in;
         }
 
-        .services .carousel .weather-app .box img{
+        .services .carousel .weather-app .box img {
             border: none;
         }
+
         .services .carousel .card .box {
             display: flex;
             flex-direction: column;
@@ -863,29 +918,35 @@
 
 
         @media (max-width: 767px) {
-    .teams .title::before,
-    .teams .title::after {
-        position: static; /* Remove absolute positioning */
-        transform: none; /* Remove the horizontal centering */
-        width: 200px;
-        height: 4px;
-        background:#fff;
-        transform: translate(25%);
-    }
-    
-    .teams .title::after {
-        content: "what we provide";
-        display: block; /* Display on a new line */
-        font-size: 20px;
-        color: #C70039;
-        background: #111;
-        margin-top: 10px; /* Add some spacing from the main heading */
-        padding: 3px;
-        text-align: center; /* Center the text */
-    }
-}
 
-       
+            .teams .title::before,
+            .teams .title::after {
+                position: static;
+                /* Remove absolute positioning */
+                transform: none;
+                /* Remove the horizontal centering */
+                width: 200px;
+                height: 4px;
+                background: #fff;
+                transform: translate(25%);
+            }
+
+            .teams .title::after {
+                content: "what we provide";
+                display: block;
+                /* Display on a new line */
+                font-size: 20px;
+                color: #C70039;
+                background: #111;
+                margin-top: 10px;
+                /* Add some spacing from the main heading */
+                padding: 3px;
+                text-align: center;
+                /* Center the text */
+            }
+        }
+
+
 
         .teams .carousel .card {
             background: #222;
@@ -1138,7 +1199,7 @@
             color: #fff;
             font-size: 20px;
             font-weight: 500;
-/*             border-radius: 30px; */
+            /*             border-radius: 30px; */
             font-family: 'Ubuntu';
             cursor: pointer;
             transition: all 0.3s ease;
@@ -1547,7 +1608,8 @@
                             class="fa-brands fa-linkedin "></i> Linkedin</a>
                     <a class="github" href="https://github.com/NC0312" target="_blank"><i
                             class="fa-brands fa-github"></i> GitHub</a>
-                    <a class="instagram" href="https://www.instagram.com/oyee_nikooo/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a class="instagram" href="https://www.instagram.com/oyee_nikooo/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> Instagram</a>
                 </div>
             </div>
         </div>
@@ -1616,6 +1678,14 @@
             <h2 class="title">My Projects</h2>
             <div class="carousel owl-carousel">
                 <div class="card netflix">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/Netflix-Clone" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://niketflix.netlify.app/" target="_blank">
                         <div class="box">
                             <img src="images\netflix.png" alt="">
@@ -1625,6 +1695,14 @@
                 </div>
 
                 <div class="card imdb-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/imdbClone" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://niketimdb.netlify.app/" target="_blank">
                         <div class="box">
                             <img src="images\imdb.png" alt="">
@@ -1634,6 +1712,14 @@
                 </div>
 
                 <div class="card weather-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/Weather.github.io" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://nc0312.github.io/Weather.github.io/" target="_blank">
                         <div class="box">
                             <img src="images\clear.png" alt="">
@@ -1643,6 +1729,14 @@
                 </div>
 
                 <div class="card movies-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/MovieDetails.github.io" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://nc0312.github.io/MovieDetails.github.io/" target="_blank">
                         <div class="box">
                             <img src="images\movies.jpg" alt="">
@@ -1650,9 +1744,17 @@
                         </div>
                     </a>
                 </div>
-                
-                
+
+
                 <div class="card login-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/login_signup" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://niketlogin.onrender.com/" target="_blank">
                         <div class="box">
                             <img src="images\loginapp.jpg" alt="">
@@ -1663,6 +1765,14 @@
 
 
                 <div class="card speech-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/Text-To-Speech.github.io" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://nc0312.github.io/Text-To-Speech.github.io/" target="_blank">
                         <div class="box">
                             <img src="images\text to speech.jpg" alt="">
@@ -1671,9 +1781,17 @@
                     </a>
                 </div>
 
-                
+
 
                 <div class="card todo-app">
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/ToDo-List-Using-React-JS" target="_blank" style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
+                        <span>
+                            <i class="fa-solid fa-info" ></i>
+                        </span>
+                    </a>
+                    </div>
                     <a href="https://nikettodo.netlify.app/" target="_blank">
                         <div class="box">
                             <img src="images\todo.png" alt="">
@@ -1682,15 +1800,28 @@
                     </a>
                 </div>
 
-                <div class="card notes-app">
-                    <a href="https://keepmemos.netlify.app/" target="_blank">
-                        <div class="box">
-                            <img src="images\keepmemo.webp" alt="">
-                            <div class="text" style="text-decoration: none; color: white;">Keep Memories</div>
-                        </div>
-                    </a>
-                </div>
                 
+                    
+                <div class="card notes-app">
+                        <div class="info-button">
+                            <a href="https://github.com/NC0312/Notes-taking-app" target="_blank" style="text-decoration: none; color: white;">
+                                <span id="tool-text">More Info</span>
+                            <span>
+                                <i class="fa-solid fa-info" ></i>
+                            </span>
+                        </a>
+                        </div>
+                    
+                    
+                        <a href="https://keepmemos.netlify.app/" target="_blank">
+                            <div class="box">
+                                <img src="images\keepmemo.webp" alt="">
+                                <div class="text" style="text-decoration: none; color: white;">Keep Memories</div>
+                            </div>
+                        </a>
+                    </div>
+                
+
 
 
             </div>
@@ -1899,9 +2030,9 @@
         </div>
     </section>
 
-        <!--Chatbot Structure-->
+    <!--Chatbot Structure-->
 
-        <!-- <div class="show-chatbot">
+    <!-- <div class="show-chatbot">
         <button class="chatbot-toggler">
             <span class="material-symbols-outlined">mode_comment</span>
             <span class="material-symbols-outlined">close</span>
