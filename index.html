@@ -1475,6 +1475,45 @@
 
         @media(max-width:947px) {
 
+            .contact .right form .field input,
+        .contact .right form .textarea textarea{
+            display: flex;
+            flex-direction: column;
+            width: 170px;
+        }
+
+        /* .contact .right form .name{
+            margin: 15px;
+        } */
+
+        .contact .contact-content .info .sub-title{
+            font-size: 15px;
+        }
+        .contact .contact-content .info .email-res{
+            display: flex;
+            font-size: 15px;
+            width: 50px;
+        }
+        .contact .contact-content .row i {
+            font-size: 20px;
+        }
+
+        .contact .contact-content .row .head{
+            font-size: 15px;
+        }
+    
+        .contact .right form .button{
+            height: 40px;
+            width: 100px;
+        }
+
+        .contact .right form .button button{
+            margin-left: 70px;
+            font-size: 12px;
+            margin-top: 1px;
+        }
+
+        
             .menu-btn {
                 display: block;
                 z-index: 500;
@@ -2034,7 +2073,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Hi,i am Niket Chawla. I am a ReactJs Web Developer and a C++/Java Developer...</p>
+                    <p>Hi,i am Niket Chawla. I am a MERN Stack and C++/Java Developer...</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -2054,7 +2093,7 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">niket.chawla04@gmail.com</div>
+                                <div class="sub-title email-res">niket.chawla04@gmail.com</div>
                             </div>
                         </div>
                     </div>
@@ -2066,9 +2105,10 @@
                             <div class="field name">
                                 <input type="text" id="name" placeholder="Name..." required>
                             </div>
-                            <div class="field email">
-                                <input type="email" id="email" placeholder="Email..." required>
-                            </div>
+                            
+                        </div>
+                        <div class="field email">
+                            <input type="email" id="email" placeholder="Email..." required>
                         </div>
                         <div class="field">
                             <input type="text" id="subject" placeholder="Subject..." required>
@@ -2197,7 +2237,7 @@
             loop:true
         });
         var typed = new Typed(".typing-2",{
-            strings:["MERN Stack Developer"],
+            strings:["MERN Stack Developer","Java Developer"],
             typeSpeed:100,
             backSpeed:60,
             loop:true
