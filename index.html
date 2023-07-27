@@ -23,7 +23,7 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
     <!-- Email Js... -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -115,8 +115,8 @@
             height: 45px;
             width: 42px;
             background: #C70039;
-            right: 30px ;
-            bottom: 10px ;
+            right: 30px;
+            bottom: 10px;
             text-align: center;
             line-height: 45px;
             color: #fff;
@@ -129,7 +129,7 @@
             transition: all 0.3s ease;
         }
 
-        .scroll-up-btn.show{
+        .scroll-up-btn.show {
             bottom: 30px;
             opacity: 1;
             pointer-events: auto;
@@ -195,7 +195,7 @@
         .navbar .menu li {
             list-style: none;
             display: inline-block;
-            
+
         }
 
         .navbar .menu li a {
@@ -206,14 +206,24 @@
             transition: all 0.2s ease;
         }
 
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: linear-gradient(to right, #C70039, #fff);
+            border-radius: 4px;
+            transition: width 0.2s ease;
+        }
+
         .navbar .menu li a:hover {
             color: #fff;
             /* font-size: 20px; */
             font-family: 'Ubuntu';
             /* font-weight: 600; */
-            filter: drop-shadow(0 0 5px lightgrey)
-            drop-shadow(0 0 5px lightgrey);
-            
+            filter: drop-shadow(0 0 5px lightgrey) drop-shadow(0 0 5px lightgrey);
+
         }
 
         .navbar.sticky .menu li a:hover {
@@ -261,7 +271,7 @@
         .home .home-content .text-3 {
             font-size: 40px;
             margin: 5px 0;
-            
+
         }
 
         .home .home-content .text-3 span {
@@ -624,7 +634,7 @@
         }
 
         .services .carousel .pendown-app:hover {
-            background: linear-gradient(to bottom, #F23E12  , #222);
+            background: linear-gradient(to bottom, #F23E12, #222);
             transition: all 0.5s ease-in;
         }
 
@@ -643,7 +653,7 @@
             transition: all 0.5s ease-in;
         }
 
-        .services .carousel .pendown-app .box img{
+        .services .carousel .pendown-app .box img {
             background: black;
         }
 
@@ -665,9 +675,9 @@
             cursor: pointer;
         }
 
-        
 
-        #tool-text{
+
+        #tool-text {
             position: absolute;
             left: 50%;
             top: 0;
@@ -684,7 +694,7 @@
             transition: opacity 0.5s ease;
         }
 
-        #tool-text::before{
+        #tool-text::before {
             content: "";
             position: absolute;
             left: 50%;
@@ -694,12 +704,12 @@
             border-color: #000 #0000 #0000 #0000;
         }
 
-        .info-button:hover #tool-text{
-            
+        .info-button:hover #tool-text {
+
             background: #C70039;
             transition: all 0.3s ease;
             top: -50%;
-            visibility:visible;
+            visibility: visible;
             opacity: 1;
         }
 
@@ -1181,35 +1191,36 @@
             display: flex;
         }
 
-        .footer-icons{
+        .footer-icons {
             padding-top: 10px;
         }
-        .footer-linkedin{
+
+        .footer-linkedin {
             font-size: 20px;
             padding-left: 10px;
         }
 
-        .footer-linkedin:hover{
+        .footer-linkedin:hover {
             color: #0A66C2;
             cursor: pointer;
         }
 
-        .footer-github{
+        .footer-github {
             font-size: 20px;
             padding-left: 10px;
         }
 
-        .footer-github:hover{
+        .footer-github:hover {
             color: white;
             cursor: pointer;
         }
 
-        .footer-insta{
+        .footer-insta {
             font-size: 20px;
             padding-left: 10px;
         }
 
-        .footer-insta:hover{
+        .footer-insta:hover {
             color: #8F4DC4;
             cursor: pointer;
             /* background: linear-gradient(to top right, #f7ad02, #de0f2e, #C22867, #8F4DC4); */
@@ -1486,51 +1497,54 @@
         @media(max-width:947px) {
 
             .contact .right form .field input,
-        .contact .right form .textarea textarea{
-            display: flex;
-            flex-direction: column;
-            width: 170px;
-        }
+            .contact .right form .textarea textarea {
+                display: flex;
+                flex-direction: column;
+                width: 170px;
+            }
 
-        /* .contact .right form .name{
+            /* .contact .right form .name{
             margin: 15px;
         } */
-.about .about-content .left img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 60px;
-    align-items: center;
-    justify-content: center;
-}
-        .contact .contact-content .info .sub-title{
-            font-size: 15px;
-        }
-        .contact .contact-content .info .email-res{
-            display: flex;
-            font-size: 15px;
-            width: 50px;
-        }
-        .contact .contact-content .row i {
-            font-size: 20px;
-        }
+            .about .about-content .left img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-right: 60px;
+                align-items: center;
+                justify-content: center;
+            }
 
-        .contact .contact-content .row .head{
-            font-size: 15px;
-        }
-    
-        .contact .right form .button{
-            height: 40px;
-            width: 100px;
-        }
+            .contact .contact-content .info .sub-title {
+                font-size: 15px;
+            }
 
-        .contact .right form .button button{
-            margin-left: 70px;
-            font-size: 12px;
-            margin-top: 1px;
-        }
+            .contact .contact-content .info .email-res {
+                display: flex;
+                font-size: 15px;
+                width: 50px;
+            }
 
-        
+            .contact .contact-content .row i {
+                font-size: 20px;
+            }
+
+            .contact .contact-content .row .head {
+                font-size: 15px;
+            }
+
+            .contact .right form .button {
+                height: 40px;
+                width: 100px;
+            }
+
+            .contact .right form .button button {
+                margin-left: 70px;
+                font-size: 12px;
+                margin-top: 1px;
+            }
+
+
             .menu-btn {
                 display: block;
                 z-index: 500;
@@ -1609,50 +1623,54 @@
         }
 
         @media(max-width:690px) {
-            .contact .right form .field input,
-        .contact .right form .textarea textarea{
-            display: flex;
-            flex-direction: column;
-            width: 170px;
-        }
 
-        /* .contact .right form .name{
+            .contact .right form .field input,
+            .contact .right form .textarea textarea {
+                display: flex;
+                flex-direction: column;
+                width: 170px;
+            }
+
+            /* .contact .right form .name{
             margin: 15px;
         } */
-.about .about-content .left img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 60px;
-    align-items: center;
-    justify-content: center;
-}
-        .contact .contact-content .info .sub-title{
-            font-size: 15px;
-        }
-        .contact .contact-content .info .email-res{
-            display: flex;
-            font-size: 15px;
-            width: 50px;
-        }
-        .contact .contact-content .row i {
-            font-size: 20px;
-        }
+            .about .about-content .left img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-right: 60px;
+                align-items: center;
+                justify-content: center;
+            }
 
-        .contact .contact-content .row .head{
-            font-size: 15px;
-        }
-    
-        .contact .right form .button{
-            height: 40px;
-            width: 100px;
-        }
+            .contact .contact-content .info .sub-title {
+                font-size: 15px;
+            }
 
-        .contact .right form .button button{
-            margin-left: 70px;
-            font-size: 12px;
-            margin-top: 1px;
-        }
+            .contact .contact-content .info .email-res {
+                display: flex;
+                font-size: 15px;
+                width: 50px;
+            }
+
+            .contact .contact-content .row i {
+                font-size: 20px;
+            }
+
+            .contact .contact-content .row .head {
+                font-size: 15px;
+            }
+
+            .contact .right form .button {
+                height: 40px;
+                width: 100px;
+            }
+
+            .contact .right form .button button {
+                margin-left: 70px;
+                font-size: 12px;
+                margin-top: 1px;
+            }
 
             .max-width {
                 padding: 0 23px;
@@ -1677,50 +1695,54 @@
         }
 
         @media(max-width:500px) {
-            .contact .right form .field input,
-        .contact .right form .textarea textarea{
-            display: flex;
-            flex-direction: column;
-            width: 170px;
-        }
 
-        /* .contact .right form .name{
+            .contact .right form .field input,
+            .contact .right form .textarea textarea {
+                display: flex;
+                flex-direction: column;
+                width: 170px;
+            }
+
+            /* .contact .right form .name{
             margin: 15px;
         } */
-.about .about-content .left img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 60px;
-    align-items: center;
-    justify-content: center;
-}
-        .contact .contact-content .info .sub-title{
-            font-size: 15px;
-        }
-        .contact .contact-content .info .email-res{
-            display: flex;
-            font-size: 15px;
-            width: 50px;
-        }
-        .contact .contact-content .row i {
-            font-size: 20px;
-        }
+            .about .about-content .left img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-right: 60px;
+                align-items: center;
+                justify-content: center;
+            }
 
-        .contact .contact-content .row .head{
-            font-size: 15px;
-        }
-    
-        .contact .right form .button{
-            height: 40px;
-            width: 100px;
-        }
+            .contact .contact-content .info .sub-title {
+                font-size: 15px;
+            }
 
-        .contact .right form .button button{
-            margin-left: 70px;
-            font-size: 12px;
-            margin-top: 1px;
-        }
+            .contact .contact-content .info .email-res {
+                display: flex;
+                font-size: 15px;
+                width: 50px;
+            }
+
+            .contact .contact-content .row i {
+                font-size: 20px;
+            }
+
+            .contact .contact-content .row .head {
+                font-size: 15px;
+            }
+
+            .contact .right form .button {
+                height: 40px;
+                width: 100px;
+            }
+
+            .contact .right form .button button {
+                margin-left: 70px;
+                font-size: 12px;
+                margin-top: 1px;
+            }
 
             .home .home-content .text-2 {
                 font-size: 50px;
@@ -1764,13 +1786,13 @@
             <ul class="menu">
                 <li><a href="#home"><i class="fa-sharp fa-solid fa-house" class="home-logo"></i> Home</a></li>
                 <li><a href="#about"><i class="fas fa-user"></i>
-                    About</a></li>
+                        About</a></li>
                 <li><a href="#services"><i class="fa-solid fa-folder"></i> Projects</a></li>
                 <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
                 <li><a href="#teams"><i class="fa-solid fa-briefcase"></i> Services</a></li>
                 <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
-            
+
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -1785,7 +1807,9 @@
                 <!-- <div class="text-2">Niket Chawla</div> -->
                 <h2 class="intro" data-text="">Niket</h2>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="resume.pdf" download>Download Resume <i class="fa-solid fa-download"></i></a>
+                <a href="resume.pdf" download>Download Resume <i class="fa-solid fa-download"></i>
+                    <div class="progress-bar"></div>
+                </a>
             </div>
         </div>
     </section>
@@ -1883,12 +1907,13 @@
             <div class="carousel owl-carousel">
                 <div class="card netflix">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/Netflix-Clone" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/Netflix-Clone" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://niketflix.netlify.app/" target="_blank">
                         <div class="box">
@@ -1900,12 +1925,13 @@
 
                 <div class="card imdb-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/imdbClone" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/imdbClone" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://niketimdb.netlify.app/" target="_blank">
                         <div class="box">
@@ -1917,12 +1943,13 @@
 
                 <div class="card pendown-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/Pendown.github.io" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/Pendown.github.io" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://pendowncode.vercel.app/" target="_blank">
                         <div class="box">
@@ -1934,12 +1961,13 @@
 
                 <div class="card weather-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/Weather.github.io" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/Weather.github.io" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://nc0312.github.io/Weather.github.io/" target="_blank">
                         <div class="box">
@@ -1951,12 +1979,13 @@
 
                 <div class="card movies-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/MovieDetails.github.io" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/MovieDetails.github.io" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://nc0312.github.io/MovieDetails.github.io/" target="_blank">
                         <div class="box">
@@ -1969,12 +1998,13 @@
 
                 <div class="card login-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/login_signup" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/login_signup" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://niketlogin.onrender.com/" target="_blank">
                         <div class="box">
@@ -1987,12 +2017,13 @@
 
                 <div class="card speech-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/Text-To-Speech.github.io" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/Text-To-Speech.github.io" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://nc0312.github.io/Text-To-Speech.github.io/" target="_blank">
                         <div class="box">
@@ -2006,12 +2037,13 @@
 
                 <div class="card todo-app">
                     <div class="info-button">
-                        <a href="https://github.com/NC0312/ToDo-List-Using-React-JS" target="_blank" style="text-decoration: none; color: white;">
+                        <a href="https://github.com/NC0312/ToDo-List-Using-React-JS" target="_blank"
+                            style="text-decoration: none; color: white;">
                             <span id="tool-text">More Info</span>
-                        <span>
-                            <i class="fa-solid fa-info" ></i>
-                        </span>
-                    </a>
+                            <span>
+                                <i class="fa-solid fa-info"></i>
+                            </span>
+                        </a>
                     </div>
                     <a href="https://nikettodo.netlify.app/" target="_blank">
                         <div class="box">
@@ -2021,27 +2053,28 @@
                     </a>
                 </div>
 
-                
-                    
+
+
                 <div class="card notes-app">
-                        <div class="info-button">
-                            <a href="https://github.com/NC0312/Notes-taking-app" target="_blank" style="text-decoration: none; color: white;">
-                                <span id="tool-text">More Info</span>
+                    <div class="info-button">
+                        <a href="https://github.com/NC0312/Notes-taking-app" target="_blank"
+                            style="text-decoration: none; color: white;">
+                            <span id="tool-text">More Info</span>
                             <span>
-                                <i class="fa-solid fa-info" ></i>
+                                <i class="fa-solid fa-info"></i>
                             </span>
                         </a>
-                        </div>
-                    
-                    
-                        <a href="https://keepmemos.netlify.app/" target="_blank">
-                            <div class="box">
-                                <img src="images\keepmemo.webp" alt="">
-                                <div class="text" style="text-decoration: none; color: white;">Keep Memories</div>
-                            </div>
-                        </a>
                     </div>
-                
+
+
+                    <a href="https://keepmemos.netlify.app/" target="_blank">
+                        <div class="box">
+                            <img src="images\keepmemo.webp" alt="">
+                            <div class="text" style="text-decoration: none; color: white;">Keep Memories</div>
+                        </div>
+                    </a>
+                </div>
+
 
 
 
@@ -2231,7 +2264,7 @@
                             <div class="field name">
                                 <input type="text" id="name" placeholder="Name..." required>
                             </div>
-                            
+
                         </div>
                         <div class="field email">
                             <input type="email" id="email" placeholder="Email..." required>
@@ -2285,25 +2318,42 @@
     <!-- footer section -->
     <footer>
         <span>Created By <a href="https://github.com/NC0312">NIKET</a> | <span class="fas fa-copyright"></span>2023 All
-            rights reserved <div class="footer-icons"> Connect with us on  
+            rights reserved <div class="footer-icons"> Connect with us on
 
-                <a href="https://www.linkedin.com/in/Niket-Chawla" style="text-decoration: none;" target="_blank"><i class="fa-brands fa-linkedin footer-linkedin">
-                </i>
+                <a href="https://www.linkedin.com/in/Niket-Chawla" style="text-decoration: none;" target="_blank"><i
+                        class="fa-brands fa-linkedin footer-linkedin">
+                    </i>
                 </a>
 
-                <a href="https://github.com/NC0312" target="_blank"><i class="fa-brands fa-github footer-github"></i></a>
-                
+                <a href="https://github.com/NC0312" target="_blank"><i
+                        class="fa-brands fa-github footer-github"></i></a>
+
 
                 <a href="https://www.instagram.com/oyee_nikooo/" target="_blank">
                     <i class="fa-brands fa-instagram footer-insta"></i>
                 </a>
-                
-            </span>
-            </div>
+
+        </span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            // Simulate the download progress (you should replace this with the actual download progress)
+            let progress = 0;
+            const progressBar = document.querySelector('.progress-bar');
+
+            const progressInterval = setInterval(function () {
+                progress += 1;
+                progressBar.style.width = progress + '%';
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                }
+            }, 50);
+        });
+
+
         $(document).ready(function () {
             $(window).scroll(function () {
                 if (this.scrollY > 20) {
@@ -2311,20 +2361,18 @@
                 } else {
                     $('.navbar').removeClass("sticky");
                 }
-                if(this.scrollY>500)
-                {
+                if (this.scrollY > 500) {
                     $('.scroll-up-btn').addClass("show");
                 }
-                else
-                {
+                else {
                     $('.scroll-up-btn').removeClass("show");
                 }
             });
 
 
             // slide up script
-            $('.scroll-up-btn').click(function(){
-                $('html').animate({scrollTop:0});
+            $('.scroll-up-btn').click(function () {
+                $('html').animate({ scrollTop: 0 });
             })
             //Toggle Menu
             $('.menu-btn').click(function () {
@@ -2356,17 +2404,17 @@
         });
 
         // typing animation script
-        var typed = new Typed(".typing",{
-            strings:["Developer","Programmer","Techie"],
-            typeSpeed:100,
-            backSpeed:60,
-            loop:true
+        var typed = new Typed(".typing", {
+            strings: ["Developer", "Programmer", "Techie"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
         });
-        var typed = new Typed(".typing-2",{
-            strings:["MERN Stack Developer .","Java Developer ."],
-            typeSpeed:100,
-            backSpeed:60,
-            loop:true
+        var typed = new Typed(".typing-2", {
+            strings: ["MERN Stack Developer .", "Java Developer ."],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
         });
         function sendMail() {
             var params = {
