@@ -1808,7 +1808,7 @@
                 <h2 class="intro" data-text="">Niket</h2>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="resume.pdf" download>Download Resume <i class="fa-solid fa-download"></i>
-                    <div class="progress-bar"></div>
+                    
                 </a>
             </div>
         </div>
@@ -2339,19 +2339,7 @@
 
     <script src="script.js"></script>
     <script>
-        document.getElementById('downloadBtn').addEventListener('click', function () {
-            // Simulate the download progress (you should replace this with the actual download progress)
-            let progress = 0;
-            const progressBar = document.querySelector('.progress-bar');
-
-            const progressInterval = setInterval(function () {
-                progress += 1;
-                progressBar.style.width = progress + '%';
-                if (progress >= 100) {
-                    clearInterval(progressInterval);
-                }
-            }, 50);
-        });
+        
 
 
 
