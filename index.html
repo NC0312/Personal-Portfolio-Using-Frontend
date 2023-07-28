@@ -358,8 +358,8 @@
         }
 
         .about .about-content .left img {
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
             object-fit: cover;
             margin-left: 60px;
             border-radius: 21px;
@@ -367,12 +367,16 @@
             transition: all 1s ease;
             overflow: hidden;
             cursor: pointer;
+            filter: opacity(40%);
         }
 
-        .about .about-content img:hover{
+        .about .about-content img:hover {
             scale: 1.2;
-            border-radius: 50%;
+            /* border-radius: 50%; */
             outline: 1px solid #000;
+            transition: all 1s ease;
+            /* Increase the brightness slightly */
+            filter: brightness(1);
         }
 
         .about .about-content .right {
@@ -1818,7 +1822,7 @@
                 <h2 class="intro" data-text="">Niket</h2>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="resume.pdf" download>Download Resume <i class="fa-solid fa-download"></i>
-                    
+
                 </a>
             </div>
         </div>
@@ -2349,7 +2353,7 @@
 
     <script src="script.js"></script>
     <script>
-        
+
 
 
 
