@@ -361,7 +361,7 @@
             height: 250px;
             width: 250px;
             object-fit: cover;
-            margin-left: 60px;
+            margin-left: 120px;
             border-radius: 21px;
             outline: none;
             transition: all 1s ease;
@@ -378,7 +378,7 @@
             transition: all 1s ease;
             /* Increase the brightness slightly */
             filter: brightness(1);
-            filter: drop-shadow(10px 10px 20px #636363);
+            filter: drop-shadow(10px 10px 15px #000);
         }
 
         .about .about-content .right {
@@ -1507,6 +1507,18 @@
         @media(max-width:991px) {
             .max-width {
                 padding: 0 50px;
+            }
+        }
+
+        @media(max-width:1115px)
+        {
+            .about .about-content .left img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin-right: 60px;
+                align-items: center;
+                justify-content: center;
             }
         }
 
