@@ -1162,9 +1162,10 @@
         .contact .right form .button {
             height: 47px;
             width: 170px;
+            color: #fff;
         }
 
-        .contact .right form .button button {
+        .contact .right form .button .msg-btn {
             height: 100%;
             width: 100%;
             background-color: #C70039;
@@ -1173,12 +1174,13 @@
             font-size: 20px;
             font-weight: 500; 
             border-radius: 4px;
-            font-family: 'Ubuntu';
+            border: none;
             cursor: pointer;
+            font-family: 'Ubuntu';
             transition: all 0.3s ease;
         }
 
-        .contact .right form .button button:active{
+        .contact .right form .button .msg-btn:active{
             box-shadow: none;
             transform: translateY(5px);
         }
@@ -2199,7 +2201,7 @@
                             <textarea cols="30" rows="10" id="message" placeholder="Describe..." project=""></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit" onclick="sendMail()">Send Message</button>
+                            <button type="submit" class="msg-btn" onclick="sendMail()">Send Message</button>
                         </div>
 
                     </form>
