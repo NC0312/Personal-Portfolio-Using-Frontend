@@ -420,39 +420,39 @@
 
         .about .about-content .right .linkedin {
             /*             background: rgb(20, 82, 237); */
-            background: #0A66C2;
+            background-color: #0A66C2;
+            box-shadow: 0 5px 0 #064a8d;
+            border-radius: 4px;
             margin-right: 8px;
         }
 
-
+        .about .about-content .right .linkedin:active{
+            box-shadow: none;
+            transform: translateY(5px);
+        } 
 
         .about .about-content .right .github {
-            background: #000;
+            background-color: #000;
+            box-shadow: 0 5px 0 #4b4747;
+            border-radius: 4px;
             margin-right: 8px;
+        }
+
+        .about .about-content .right .github:active{
+            box-shadow: none;
+            transform: translateY(5px);
         }
 
         .about .about-content .right .instagram {
             background: linear-gradient(to top right, #f7ad02, #de0f2e, #C22867, #8F4DC4);
+            box-shadow: 0 5px 0 #C70039;
+            border-radius: 4px;
         }
 
-        .about .about-content .right .linkedin:hover {
-            border: 2px solid #0A66C2;
-            border-radius:4px;
-            transition: all 0.5s ease;
+        .about .about-content .right .instagram:active{
+            box-shadow: none;
+            transform: translateY(5px);
         }
-
-        .about .about-content .right .github:hover {
-            border: 2px solid #000;
-            border-radius:4px;
-            transition: all 0.5s ease;
-        }
-
-        .about .about-content .right .instagram:hover {
-            border: 2px solid #C22867;
-            border-radius:4px;
-            transition: all 0.5s ease;
-        }
-
 
 
 
@@ -1167,20 +1167,20 @@
         .contact .right form .button button {
             height: 100%;
             width: 100%;
-            border: 2px solid #C70039;
-            background: #C70039;
+            background-color: #C70039;
+            box-shadow: 0 5px 0 #a22b4d;
             color: #fff;
             font-size: 20px;
-            font-weight: 500;
-            /*             border-radius: 30px; */
+            font-weight: 500; 
+            border-radius: 4px;
             font-family: 'Ubuntu';
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
-        .contact .right form .button button:hover {
-            color: #C70039;
-            background: none;
+        .contact .right form .button button:active{
+            box-shadow: none;
+            transform: translateY(5px);
         }
 
 
