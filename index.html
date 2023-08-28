@@ -129,14 +129,14 @@
             transition: all 0.3s ease;
         }
 
-       .scroll-up-btn:hover {
+        .scroll-up-btn:hover {
             background-color: #fff;
             color: #C70039;
             border: 1px solid #000;
 
-            transition: background-color 0.3s ease,color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        
+
         .scroll-up-btn.show {
             bottom: 30px;
             opacity: 1;
@@ -290,21 +290,24 @@
 
         .home .home-content a {
             display: inline-block;
-            background: #C70039;
+            background-color: #C70039;
+            box-shadow: 0 5px 0 #a22b4d;
             color: #fff;
             font-family: 'Ubuntu';
             font-size: 25px;
             padding: 12px 36px;
             margin-top: 20px;
-            /*             border-radius: 15px; */
+            border-radius: 4px;
             border: 2px solid #C70039;
             transition: all 0.3s ease;
         }
 
-        .home .home-content a:hover {
-            color: #C70039;
-            background: none;
+        .home .home-content a:active {
+            box-shadow: none;
+            transform: translateY(5px);
         }
+
+
 
         /* About Section Styling */
         /* .about{
@@ -375,7 +378,7 @@
             transition: all 1s ease;
             overflow: hidden;
             cursor: pointer;
-            outline:1px solid #000;
+            outline: 1px solid #000;
             filter: drop-shadow(10px 10px 20px #222);
         }
 
@@ -426,10 +429,10 @@
             margin-right: 8px;
         }
 
-        .about .about-content .right .linkedin:active{
+        .about .about-content .right .linkedin:active {
             box-shadow: none;
             transform: translateY(5px);
-        } 
+        }
 
         .about .about-content .right .github {
             background-color: #000;
@@ -438,7 +441,7 @@
             margin-right: 8px;
         }
 
-        .about .about-content .right .github:active{
+        .about .about-content .right .github:active {
             box-shadow: none;
             transform: translateY(5px);
         }
@@ -449,7 +452,7 @@
             border-radius: 4px;
         }
 
-        .about .about-content .right .instagram:active{
+        .about .about-content .right .instagram:active {
             box-shadow: none;
             transform: translateY(5px);
         }
@@ -515,8 +518,8 @@
             transition: all 0.5s ease-in;
         }
 
-        .services .carousel .recipe-app:hover{
-            background: linear-gradient(to bottom , #F23E12 ,#E16120, #000);
+        .services .carousel .recipe-app:hover {
+            background: linear-gradient(to bottom, #F23E12, #E16120, #000);
             transition: all 0.5s ease-in;
         }
 
@@ -529,7 +532,7 @@
             background: linear-gradient(to bottom, #266ead, #000);
             transition: all 0.5s ease-in;
         }
-        
+
         .services .carousel .movies-app:hover {
             background: linear-gradient(to bottom, #C91E17, #280000, #020001);
             transition: all 0.5s ease-in;
@@ -545,7 +548,7 @@
         }
 
         .services .carousel .recipe-app .box img {
-            
+
             background: black;
         }
 
@@ -788,7 +791,7 @@
         .skills-content .right .mongo::before {
             width: 70%;
         }
-        
+
         .skills-content .right .html::before {
             width: 90%;
         }
@@ -1172,7 +1175,7 @@
             box-shadow: 0 5px 0 #a22b4d;
             color: #fff;
             font-size: 20px;
-            font-weight: 500; 
+            font-weight: 500;
             border-radius: 4px;
             border: none;
             cursor: pointer;
@@ -1180,7 +1183,7 @@
             transition: all 0.3s ease;
         }
 
-        .contact .right form .button .msg-btn:active{
+        .contact .right form .button .msg-btn:active {
             box-shadow: none;
             transform: translateY(5px);
         }
@@ -1517,191 +1520,189 @@
         .intro2::selection {
             background-color: #C70039;
             color: #fff;
-/*             user-select:none; */
+            /*             user-select:none; */
         }
 
         .text-1::selection {
-/*            user-select:none; */
+            /*            user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .intro::selection {
-/*            user-select:none; */
+            /*            user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .text-3::selection {
-/*           user-select:none; */
+            /*           user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .text-3 span::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .navbar .menu a::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .home .home-content a::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .about .max-width .title::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .about .max-width .about-content .left img::selection {
-            user-select:none;
-/*             background-color: #C70039;
+            user-select: none;
+            /*             background-color: #C70039;
             color: #fff; */
         }
 
         .about .max-width .about-content .right .text::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .about .max-width .about-content .right span::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
 
         .about .max-width .about-content .right .para p::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .about .max-width .about-content .right .para span::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .about .max-width .about-content .right a::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .services .max-width .title::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .skills .max-width .title::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .skills .max-width .skills-content .left .text::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .skills .max-width .skills-content .left p::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .skills .max-width .skills-content .right .bars .info span::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .skills .max-width .skills-content .right .bars .info img::selection {
-            user-select:none;
-/*             background-color: #C70039;
+            user-select: none;
+            /*             background-color: #C70039;
             color: #fff; */
         }
 
         .teams .max-width .title::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .title::selection {
-/*            user-select:none; */
+            /*            user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .left .text::selection {
-/*            user-select:none; */
+            /*            user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .left p::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .left .icons .row .info .head::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .left .icons .row .info .sub-title::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .right .text::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
         .contact .max-width .contact-content .right .button button::selection {
-/*             user-select:none; */
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
-        footer span::selection{
-/*             user-select:none; */
+        footer span::selection {
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
-        footer a::selection{
-/*             user-select:none; */
+        footer a::selection {
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
 
-        footer .footer-icons::selection{
-/*             user-select:none; */
+        footer .footer-icons::selection {
+            /*             user-select:none; */
             background-color: #C70039;
             color: #fff;
         }
-
-        
     </style>
 
 </head>
@@ -1820,7 +1821,7 @@
                     </a>
                 </div>
 
-               <div class="card recipe-app">
+                <div class="card recipe-app">
                     <div class="info-button">
                         <a href="https://github.com/NC0312/HungerBounce" target="_blank"
                             style="text-decoration: none; color: white;">
@@ -1859,7 +1860,7 @@
                 </div>
 
 
-               
+
 
                 <div class="card weather-app">
                     <div class="info-button">
@@ -1998,17 +1999,20 @@
                 </div>
                 <div class="column right">
 
-                     <div class="bars">
+                    <div class="bars">
                         <div class="info">
-                            <span><img src="images/java-icon.png" style="background: transparent; height: 25px; width: 25px; padding-right: 8px; margin-left: 13px;"/> Java</span>
+                            <span><img src="images/java-icon.png"
+                                    style="background: transparent; height: 25px; width: 25px; padding-right: 8px; margin-left: 13px;" />
+                                Java</span>
                             <span>80%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
-                    
+
                     <div class="bars">
                         <div class="info">
-                            <span><i class="fa-brands fa-react" style="color: cyan; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>ReactJs</span>
+                            <span><i class="fa-brands fa-react"
+                                    style="color: cyan; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>ReactJs</span>
                             <span>90%</span>
                         </div>
                         <div class="line html"></div>
@@ -2016,24 +2020,26 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span> <i class="fa-brands fa-square-js" style="color: #ffb02a; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>JavaScript</span>
+                            <span> <i class="fa-brands fa-square-js"
+                                    style="color: #ffb02a; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>JavaScript</span>
                             <span>80%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
-                   
-                    
+
+
                     <div class="bars">
                         <div class="info">
-                            <span><i class="fa-solid fa-database" style="color: #0c990a; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>MongoDB</span>
+                            <span><i class="fa-solid fa-database"
+                                    style="color: #0c990a; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>MongoDB</span>
                             <span>70%</span>
                         </div>
                         <div class="line mongo"></div>
                     </div>
-                    
-                    
-                    
-<!--                     <div class="bars">
+
+
+
+                    <!--                     <div class="bars">
                         <div class="info">
                             <span>C++</span>
                             <span>80%</span>
@@ -2042,7 +2048,8 @@
                     </div> -->
                     <div class="bars">
                         <div class="info">
-                            <span> <i class="fa-solid fa-code" style="color: #e44d26; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0; "></i>
+                            <span> <i class="fa-solid fa-code"
+                                    style="color: #e44d26; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0; "></i>
                                 HTML5</span>
                             <span>90%</span>
                         </div>
@@ -2050,7 +2057,8 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span> <i class="fa-brands fa-css3" style="color: #3d98d1; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>CSS3</span>
+                            <span> <i class="fa-brands fa-css3"
+                                    style="color: #3d98d1; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>CSS3</span>
                             <span>90%</span>
                         </div>
                         <div class="line mark"></div>
@@ -2058,7 +2066,8 @@
 
                     <div class="bars">
                         <div class="info">
-                            <span><i class="fa-brands fa-node" style="color: #22bc20; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>NodeJs/ExpressJs</span>
+                            <span><i class="fa-brands fa-node"
+                                    style="color: #22bc20; font-size: 25px; padding: 10px; padding-bottom:0 ; padding-top: 0;"></i>NodeJs/ExpressJs</span>
                             <span>70%</span>
                         </div>
                         <div class="line node"></div>
@@ -2082,14 +2091,14 @@
 
                     </div>
                 </div>
-                
+
                 <div class="card js">
                     <div class="box">
                         <img src="images\js.png" alt="">
                         <div class="text">JavaScript</div>
                     </div>
                 </div>
-                
+
                 <div class="card react">
                     <div class="box">
                         <img style="align-items:center; justify-content:center;" src="images/react.png">
@@ -2124,8 +2133,8 @@
                         <div class="text">MongoDB</div>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="card css">
                     <div class="box">
                         <img src="images/css.png">
